@@ -1,0 +1,15 @@
+diff --git a/himbaechel/uarch/xilinx/pack_io.cc b/himbaechel/uarch/xilinx/pack_io.cc
+index 0b52d90..a9515a2 100644
+--- a/himbaechel/uarch/xilinx/pack_io.cc
++++ b/himbaechel/uarch/xilinx/pack_io.cc
+@@ -339,7 +339,9 @@ void XC7Packer::pack_io()
+         CellInfo *pad = iob.first;
+         // Process location constraints
+         if (pad->attrs.count(id_PACKAGE_PIN)) {
+-            pad->attrs[id_LOC] = pad->attrs.at(id_PACKAGE_PIN);
++            // Inserting LOC can reallocate attrs and invalidate a PACKAGE_PIN reference.
++            const Property package_pin = pad->attrs.at(id_PACKAGE_PIN);
++            pad->attrs[id_LOC] = package_pin;
+         }
+         if (pad->attrs.count(id_LOC)) {
+             std::string loc = pad->attrs.at(id_LOC).to_string();

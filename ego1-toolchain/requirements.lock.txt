@@ -1,0 +1,9 @@
+Arpeggio==2.0.3
+intervaltree==3.2.1
+numpy==2.4.6
+packaging==26.3
+pyjson5==2.0.1
+PyYAML==6.0.3
+simplejson==4.1.2
+sortedcontainers==2.4.0
+textX==4.4.0

@@ -1,0 +1,16 @@
+#!/bin/bash
+set -euo pipefail
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+source "$ROOT/env.sh"
+for tool in iverilog vvp verilator yosys nextpnr-himbaechel fasm2frames xc7frames2bit bitread openFPGALoader; do
+  command -v "$tool"
+done
+for file in "$XRAY_DATABASE/$FPGA_PART/part.yaml" "$ROOT/share/nextpnr/himbaechel/xilinx/chipdb-xc7a50t.bin"; do
+  test -s "$file"
+  echo "OK: $file"
+done
+nextpnr-himbaechel --help >/dev/null 2>&1
+fasm2frames --help >/dev/null 2>&1
+verilator --version
+yosys -V
+echo 'PASS: software and database checks. Hardware programming is a separate check.'

@@ -1,0 +1,24 @@
+# Local toolchain installations and generated artifacts
+/ego1-toolchain/src/
+/ego1-toolchain/build/
+/ego1-toolchain/.venv/
+/ego1-toolchain/share/
+/ego1-toolchain/lib/
+/ego1-toolchain/logs/
+/ego1-toolchain/bin/nextpnr-himbaechel
+/ego1-toolchain/bin/xc7frames2bit
+/ego1-toolchain/bin/bitread
+**/build/
+__pycache__/
+*.py[cod]
+.DS_Store
+/.vscode/
+
+# Personal course projects; the public example is blink.
+/labs/
+/ego1-toolchain/examples/*/
+!/ego1-toolchain/examples/blink/
+/open-fpga/projects.local.json
+/ego1-toolchain/CS207_M5_Mac_实验教程.md
+/ego1-toolchain/待上板验证.md
+/.github/modernize/

@@ -1,0 +1,9 @@
+boost 1.92.0
+cmake 4.4.3
+eigen 5.0.1
+icarus-verilog 13.0
+ninja 1.13.2
+openfpgaloader 1.1.1
+python@3.11 3.11.16
+verilator 5.052
+yosys 0.68

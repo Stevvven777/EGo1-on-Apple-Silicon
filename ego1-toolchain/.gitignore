@@ -1,0 +1,10 @@
+src/
+build/
+.venv/
+share/
+lib/
+bin/nextpnr-himbaechel
+bin/xc7frames2bit
+bin/bitread
+examples/*/build/
+__pycache__/

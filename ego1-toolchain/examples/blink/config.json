@@ -1,0 +1,12 @@
+{
+  "name": "blink",
+  "top": "top",
+  "sources": [
+    "top.v"
+  ],
+  "testbench": "top_tb.v",
+  "sim_top": "top_tb",
+  "constraints": "top.xdc",
+  "wave_file": "build/top.vcd",
+  "freq": 100
+}

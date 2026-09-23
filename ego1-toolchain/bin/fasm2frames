@@ -1,0 +1,5 @@
+#!/bin/bash
+set -euo pipefail
+ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+export PYTHONPATH="$ROOT/src/prjxray:$ROOT/src/prjxray/third_party/fasm${PYTHONPATH:+:$PYTHONPATH}"
+exec "$ROOT/.venv/bin/python" "$ROOT/src/prjxray/utils/fasm2frames.py" "$@"

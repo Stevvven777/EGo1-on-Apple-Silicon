@@ -1,0 +1,5 @@
+{
+  "part": "xc7a35tcsg324-1",
+  "cable": "ft2232",
+  "xray_db": "../ego1-toolchain/src/prjxray-db/artix7"
+}

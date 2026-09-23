@@ -1,0 +1,46 @@
+{
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "architecture": "arm64",
+  "part": "xc7a35tcsg324-1",
+  "repositories": {
+    "nextpnr": {
+      "url": "https://github.com/YosysHQ/nextpnr.git",
+      "commit": "3cfc28d02e05bef56a30517745d57d8d1118c97e",
+      "submodules": [
+        "b1fab721655c5c4b1b08a083d3cd29f163af75d0 3rdparty/corrosion (b1fab72)",
+        " 52eb8108c5bdec04579160ae17225d66034bd723 3rdparty/googletest (52eb810)",
+        " 491aefcc15be159efc8ad8bff2a1a4b93fe487fe himbaechel/uarch/xilinx/meta (heads/master)",
+        " ce154121819a04ec921a4a6f6850c28f33c81b6c tests (ce15412)"
+      ]
+    },
+    "prjxray": {
+      "url": "https://github.com/f4pga/prjxray.git",
+      "commit": "c9f02d8576042325425824647ab5555b1bc77833",
+      "submodules": [
+        "cc70e832b01f6c10ce9461c34f067ad91f8a2698 third_party/abseil-cpp (cc70e83)",
+        " 1f2268a1b66f413095a4f3dfc2ff87cbe425fbf4 third_party/cctz (1f2268a)",
+        " 3d509d41c07a151704f3e7135a032d16d9b6a0b1 third_party/display_port (heads/master)",
+        " ffafe821bae68637fe46e36bcfd2a01b97cdf6f2 third_party/fasm (heads/master)",
+        " c79b0fd80c9d200f2eae5af224913a5617801185 third_party/fasm/third_party/antlr4 (c79b0fd)",
+        " c84f4b077b1ecf17a6465c6a442c370597578325 third_party/fasm/third_party/antlr4/runtime/PHP (c84f4b0)",
+        " 703bd9caab50b139428cea1aaff9974ebee5742e third_party/fasm/third_party/googletest (703bd9c)",
+        " 9b07ad2bb62fbf8af789c9e4669715c974b4912d third_party/fasm/third_party/make-env (9b07ad2)",
+        " 03a4842c9c6aaef438d7bf0c84e8a62c8064992b third_party/gflags (03a4842)",
+        " 2b6b042a77446ff322cd7522ca068d9f2a21c1d1 third_party/googletest (2b6b042)",
+        " 119eee06c5a8700da594c5e066259a96858ececa third_party/python-sdf-timing (119eee0)",
+        " 3f0542e4e034aab417c51b2b22c94f83355dee15 third_party/sanitizers-cmake (3f0542e)",
+        " 39f737443b05e4135e697cb91c2b7b18095acd53 third_party/yaml-cpp (39f7374)",
+        " 38f858374c0ed83a6ac3ea66715263af015d7974 third_party/yosys (38f8583)",
+        " cac8f99eaa220a5e3db5caeb87cef0a975c953a2 third_party/yosys/abc (cac8f99)",
+        " 4bf61f08697b110d9e3991864650a405b3dd515d third_party/yosys/libs/cxxopts (4bf61f0)"
+      ]
+    },
+    "prjxray-db": {
+      "url": "https://github.com/f4pga/prjxray-db.git",
+      "commit": "0a0addedd73e7e4139d52a6d8db4258763e0f1f3",
+      "submodules": []
+    }
+  },
+  "local_patch": "patches/nextpnr-package-pin.patch",
+  "fasm_parser": "pure Python textX from pinned prjxray submodule"
+}
