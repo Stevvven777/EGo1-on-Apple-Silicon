@@ -33,9 +33,23 @@ The public checkout includes the `blink` example. Student labs can be registered
 ## Contributors
 
 - [Stevvven777](https://github.com/Stevvven777): Maintained and refined the toolchain on macOS.
-- [szdytom](https://github.com/szdytom): Developed the initial general-purpose version of the toolchain.
+- [szdytom](https://github.com/szdytom): Gathered and configured components for the initial toolchain setup.
 
 The project is released under the [MIT License](LICENSE).
+
+## Acknowledgements
+
+We would like to thank the [F4PGA developers](https://github.com/f4pga) for their work on the Xilinx 7-series FPGA toolchain. Their tools and device data are essential to this project.
+
+We also thank the following open source projects that make this workflow possible:
+
+- [Project X-Ray](https://github.com/f4pga/prjxray): Tools for understanding and generating Xilinx 7-series bitstreams.
+- [Project X-Ray database](https://github.com/f4pga/prjxray-db): Device configuration data used to build Artix-7 bitstreams.
+- [Yosys](https://github.com/YosysHQ/yosys): Synthesis of Verilog designs.
+- [nextpnr](https://github.com/YosysHQ/nextpnr): FPGA placement and routing.
+- [Icarus Verilog](https://github.com/steveicarus/iverilog): Running Verilog testbenches.
+- [Verilator](https://github.com/verilator/verilator): Checking RTL before a build.
+- [openFPGALoader](https://github.com/trabucayre/openFPGALoader): Detecting and programming the FPGA over USB/JTAG.
 
 ## Scope
 

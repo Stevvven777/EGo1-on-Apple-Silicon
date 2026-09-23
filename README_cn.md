@@ -33,9 +33,23 @@ AI 助手还应阅读 [AGENTS.md](AGENTS.md)。工具链的本机维护记录见
 ## 贡献者
 
 - [Stevvven777](https://github.com/Stevvven777)：维护并优化了工具链在 Mac 上的表现。
-- [szdytom](https://github.com/szdytom)：开发了工具链的初始泛用版本。
+- [szdytom](https://github.com/szdytom)：整理并配置了早期工具链组件。
 
 项目采用 [MIT 许可证](LICENSE)。
+
+## 致谢
+
+感谢 [F4PGA 开发者](https://github.com/f4pga)为 Xilinx 7 系列 FPGA 开源工具链所做的工作。他们开发的工具和器件数据是本项目的重要基础。
+
+也感谢以下开源项目，让这套流程得以实现：
+
+- [Project X-Ray](https://github.com/f4pga/prjxray)：理解并生成 Xilinx 7 系列 bitstream 的工具。
+- [Project X-Ray 数据库](https://github.com/f4pga/prjxray-db)：构建 Artix-7 bitstream 所需的器件配置数据。
+- [Yosys](https://github.com/YosysHQ/yosys)：综合 Verilog 设计。
+- [nextpnr](https://github.com/YosysHQ/nextpnr)：FPGA 布局布线。
+- [Icarus Verilog](https://github.com/steveicarus/iverilog)：运行 Verilog testbench。
+- [Verilator](https://github.com/verilator/verilator)：构建前检查 RTL。
+- [openFPGALoader](https://github.com/trabucayre/openFPGALoader)：通过 USB/JTAG 检测并下载 FPGA 配置。
 
 ## 项目范围
 
